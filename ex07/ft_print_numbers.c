@@ -6,11 +6,11 @@
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 12:36:17 by thribeir          #+#    #+#             */
-/*   Updated: 2025/10/08 12:40:14 by thribeir         ###   ########.fr       */
+/*   Updated: 2025/10/08 16:59:20 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	ft_putchar(char c);
+void	ft_putchar(char c);
 
 void	ft_print_numbers(void)
 {

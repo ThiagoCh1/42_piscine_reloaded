@@ -1,18 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_count_if.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/08 12:10:11 by thribeir          #+#    #+#             */
-/*   Updated: 2025/10/08 16:59:27 by thribeir         ###   ########.fr       */
+/*   Created: 2025/10/08 16:38:32 by thribeir          #+#    #+#             */
+/*   Updated: 2025/10/08 17:19:18 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putchar(char c)
+int	ft_count_if(char **tab, int length, int (*f)(char *))
 {
-	write (1, &c, 1);
+	int	i;
+	int	count;
+
+	i = 0;
+	count = 0;
+	while (i < length)
+	{
+		if (f(tab[i]) != 0)
+			count++;
+		i++;
+	}
+	return (count);
 }

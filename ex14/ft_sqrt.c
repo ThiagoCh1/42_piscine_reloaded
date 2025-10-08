@@ -1,18 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/08 12:10:11 by thribeir          #+#    #+#             */
-/*   Updated: 2025/10/08 16:59:27 by thribeir         ###   ########.fr       */
+/*   Created: 2025/10/08 16:46:28 by thribeir          #+#    #+#             */
+/*   Updated: 2025/10/08 16:47:07 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putchar(char c)
+int	ft_sqrt(int nb)
 {
-	write (1, &c, 1);
+	int	i;
+
+	if (nb <= 0)
+		return (0);
+	if (nb == 1)
+		return (1);
+	i = 1;
+	while (i <= 46340 && i * i <= nb)
+	{
+		if (i * i == nb)
+			return (i);
+		i++;
+	}
+	return (0);
 }

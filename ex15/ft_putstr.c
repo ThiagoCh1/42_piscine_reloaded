@@ -1,18 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/08 12:10:11 by thribeir          #+#    #+#             */
-/*   Updated: 2025/10/08 16:59:27 by thribeir         ###   ########.fr       */
+/*   Created: 2025/10/08 16:35:10 by thribeir          #+#    #+#             */
+/*   Updated: 2025/10/08 16:50:16 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+char	ft_putchar(char c);
 
-void	ft_putchar(char c)
+void	ft_putstr(char *s)
 {
-	write (1, &c, 1);
+	if (!s)
+		return ;
+	while (*s)
+	{
+		ft_putchar(*s);
+		s++;
+	}
 }

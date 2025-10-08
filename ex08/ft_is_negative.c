@@ -6,11 +6,11 @@
 /*   By: thribeir <thribeir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 12:41:00 by thribeir          #+#    #+#             */
-/*   Updated: 2025/10/08 12:44:44 by thribeir         ###   ########.fr       */
+/*   Updated: 2025/10/08 16:59:31 by thribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	ft_putchar(char c);
+void	ft_putchar(char c);
 
 void	ft_is_negative(int c)
 {
